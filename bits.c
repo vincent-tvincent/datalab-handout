@@ -198,7 +198,7 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-    return !(x + (1 << 31) + 1);
+    return (!!~x)&!~(x+x + 1);
 }
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
@@ -209,7 +209,7 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
-    return 1;
+    return x;
 }
 /* 
  * negate - return -x 
