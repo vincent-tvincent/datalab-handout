@@ -209,7 +209,7 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
-    return x;
+    return ;
 }
 /* 
  * negate - return -x 
@@ -252,7 +252,7 @@ int conditional(int x, int y, int z) {
  *   Rating: 3
  */
 int isLessOrEqual(int x, int y) {
-  return 2;
+  return !((x&y) + (~x+1))|!((~x+1 + y) >> 31 + 1);
 }
 //4
 /* 
